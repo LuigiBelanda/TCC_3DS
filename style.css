@@ -259,8 +259,12 @@ input:focus {
         height: 50px;
     
         margin-top: 25px;
-        margin-left: 20%;
+        margin-left: 16%;
         margin-bottom: 5px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .title {
@@ -270,8 +274,12 @@ input:focus {
     
         letter-spacing: 3.5px;
     
-        margin-left: 35%;
+        margin-left: 10%;
         margin-top: -3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     #linha_titles {
@@ -279,12 +287,16 @@ input:focus {
         height: 10px;
     
         margin-right: 5px;
-        margin-left: 10%;
+        margin-left: 8%;
     
         background-color: var(--color-elements);
     
         border-color: var(--color-elements);
         border-radius: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .subtitle {
@@ -292,13 +304,15 @@ input:focus {
         font-size: 0.65rem;
         color: var(--color-font);
     
-        margin-left: 10%;
-        margin-right: 5px;
+        margin-left: 8%;
         margin-top: 10px;
     
         width: 80vw;
 
         text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #forms_cad_log {
@@ -306,13 +320,17 @@ input:focus {
         height: 390px;
 
         margin-top: 2.5rem;
-        margin-left: 10%;
+        margin-left: 8%;
+        margin-right: -8%;
     
         background-color: var(--color-elements);
     
         border-radius: 25px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
     
     .title_forms {
         font-family: "poppins", sans-serif;
@@ -420,11 +438,11 @@ input:focus {
     }
 
     #creators {
-        width: 150px;
+        width: 80vw;
         height: 45px;
     
         margin-top: 2rem;
-        margin-left: 30%;
+        margin-left: 8%;
         margin-right: 10%;
         margin-bottom: 15px;
     
