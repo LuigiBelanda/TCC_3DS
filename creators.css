@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*================= LUIGI =================*/
+
+#luigi {
+    width: 20vw;
+    height: 100vh;
+    max-height: 100vh;
+
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+
+    transition: 0.25s;
+
+    font-size: 15px;
+}
+
+#luigi:hover {
+    opacity: 1;
+}
+
+/*================= FELLIPE =================*/
+
+#fellipe {
+    width: 20vw;
+    height: 100vh;
+    max-height: 100vh;
+
+    margin-left: 20vw;
+    margin-right: auto;
+    margin-top: -100vh;
+
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+
+    transition: 0.25s;
+
+    font-size: 15px;
+}
+
+#fellipe:hover {
+    opacity: 1;
+}
+
+/*================= GIOVANA =================*/
+
+#giovana {
+    width: 20vw;
+    height: 100vh;
+    max-height: 100vh;
+
+    margin-left: 40vw;
+    margin-right: auto;
+    margin-top: -100vh;
+
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+
+    transition: 0.25s;
+
+    font-size: 15px;
+}
+
+#giovana:hover {
+    opacity: 1;
+}
+
+/*================= PATRICK =================*/
+
+#patrick {
+    width: 20vw;
+    height: 100vh;
+    max-height: 100vh;
+
+    margin-left: 60vw;
+    margin-right: auto;
+    margin-top: -100vh;
+
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(180deg, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(180deg, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+
+    transition: 0.25s;
+
+    font-size: 15px;
+}
+
+#patrick:hover {
+    opacity: 1;
+}
+
+/*================= GUSTAVO =================*/
+
+#gustavo {
+    width: 20vw;
+    height: 100vh;
+    max-height: 100vh;
+
+    margin-left: 80vw;
+    margin-right: auto;
+    margin-top: -100vh;
+
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    opacity: 0.8;
+
+    transition: 0.25s;
+
+    font-size: 15px;
+}
+
+#gustavo:hover {
+    opacity: 1;
+}
+
+/*================= FOTOS and H1 =================*/
+
+.fotos {
+    height: 200px;
+    width: 200px;
+
+    border-radius: 50%;
+    border: 3px solid #000000;
+
+    margin-top: 25vh;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    
+    color: #e5e5e5;
+}
+
+/*================= BUTTON =================*/
+
+button {
+    margin-top: 100px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 150px;
+    height: 35px;
+
+    border-radius: 45px;
+    border: none;
+
+    letter-spacing: 2.5px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 5pt 0.5pt #000000;
+}
