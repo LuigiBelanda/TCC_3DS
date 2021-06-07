@@ -179,3 +179,98 @@ button {
 button:hover {
     box-shadow: 0 0 5pt 0.5pt #000000;
 }
+
+/*================= MEDIA =================*/
+
+@media (max-width: 640px){
+    #luigi {
+        width: 100%;
+        height: 40vh;
+        max-height: 40vh;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    #fellipe {
+        width: 100%;
+        height: 40vh;
+        max-height: 40vh;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    #giovana {
+        width: 100%;
+        height: 40vh;
+        max-height: 40vh;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    
+        background: #34e89e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(180deg, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(180deg, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+        opacity: 0.8;
+    
+        transition: 0.25s;
+    
+        font-size: 15px;
+    }
+
+    #patrick {
+        width: 100%;
+        height: 40vh;
+        max-height: 40vh;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    #gustavo {
+        width: 100%;
+        height: 40vh;
+        max-height: 40vh;
+    
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+
+    .fotos {
+        height: 100px;
+        width: 100px;
+    
+        border-radius: 50%;
+        border: 3px solid #000000;
+    
+        margin-top: 15%;
+    }
+
+    button {
+        margin-top: 1vh;
+    
+        width: 120px;
+        height: 25px;
+    
+        border-radius: 45px;
+        border: none;
+    
+        letter-spacing: 2.5px;
+        font-family: "poppins", sans-serif;
+        text-align: center;
+        font-weight: 700;
+    
+        cursor: pointer;
+    }
+
+    button:hover {
+        box-shadow: 0 0 5pt 0.5pt #000000;
+    }    
+}
