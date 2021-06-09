@@ -25,55 +25,61 @@
 
 <body>
     
-    <section>
-        <!-- logo -->
-        <img src="./img/gps.svg" alt="logo" id="logo">
+    <div id="container-imagem"></div>
 
-        <!-- title - name project -->
-        <div class="title">
-            <h1>SIGNALER</h1>
+    <main class="container">
+        <section>
+            <!-- logo -->
+            <img src="./img/gps.svg" alt="logo" id="logo">
+
+            <!-- logo 2-->
+            <img src="./img/gps.svg" alt="logo" id="logo2">
+    
+            <!-- title - name project -->
+            <div class="title">
+                <h1>SIGNALER</h1>
+            </div>
+    
+            <!-- element - linha -->
+            <hr id="linha_titles"></hr>
+    
+            <!-- subtitle -->
+            <div class="subtitle">
+                <h2>Aplicação com foco na eficiência e rapidez de reportes de problemas urbanos</h2>
+            </div>
+        </section>
+
+        
+        <!-- forms -->
+        <div id="forms_cad_log">
+            <form method="POST" action="">
+                <h3 class="title_forms"> ENTRAR </h3>
+                <input type="text" name="nome" placeholder="digite o nome de seu usuário">
+                <br>
+                <input type="password" name="password" placeholder="digite a sua senha">
+                <br>
+                <br>
+                <button type="submit" class="forms_button"> LOGIN </button>
+
+                <hr id="linha_forms"></hr>
+
+                <h3 class="title_forms"> CADASTRAR </h3>
+                <input type="text" name="nome" placeholder="digite o nome de seu usuário">
+                <br>
+                <input type="password" name="password" placeholder="digite a sua senha">
+                <br>
+                <br>
+                <button type="submit" class="forms_button"> CADASTRAR </button>
+            </form>
         </div>
 
-        <!-- element - linha -->
-        <hr id="linha_titles"></hr>
-
-        <!-- subtitle -->
-        <div class="subtitle">
-            <h2>Aplicação com foco na eficiência e rapidez de reportes de problemas urbanos</h2>
-        </div>
-    </section>
-
-    <!-- forms -->
-    <div id="forms_cad_log">
-        <form method="POST" action="">
-            <h3 class="title_forms"> ENTRAR </h3>
-            <input type="text" name="nome" placeholder="digite o nome de seu usuário">
-            <br>
-            <input type="password" name="password" placeholder="digite a sua senha">
-            <br>
-            <br>
-            <button type="submit" class="forms_button"> LOGIN </button>
-
-            <hr id="linha_forms"></hr>
-
-            <h3 class="title_forms"> CADASTRAR </h3>
-            <input type="text" name="nome" placeholder="digite o nome de seu usuário">
-            <br>
-            <input type="password" name="password" placeholder="digite a sua senha">
-            <br>
-            <br>
-            <button type="submit" class="forms_button"> CADASTRAR </button>
-
-        </form>
-    </div>
-
-    <!-- button creators -->
-    <a href="./creators.html">
-        <button id="creators">
-            CRIADORES
-        </button>
-    </a>
-
+        <!-- button creators -->
+        <a href="./creators.html">
+            <button id="creators">
+                CRIADORES
+            </button>
+        </a>
+    </main>
 </body>
 
 </html>
