@@ -34,7 +34,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    margin-top: 2.5%;
+    margin-top: 0.25%;
     margin-bottom: auto;
 
     display: flex;
@@ -49,6 +49,7 @@ body {
     height: 50px;
 
     margin-top: 20px;
+    margin-bottom: 25px;
     margin-right: 35px;
 }
 
@@ -57,11 +58,12 @@ body {
     height: 50px;
 
     margin-top: 20px;
+    margin-bottom: 25px;
     margin-left: 35px;
 }
 
 #title_logo {
-    height: 50px;
+    height: 100px;
     width: 250px;
 
     margin-top: -65px;
@@ -78,7 +80,7 @@ body {
     border-color: var(--color-elements);
     border-radius: 50px;
 
-    margin-top: -5px;
+    margin-top: -15px;
     margin-bottom: 5px;
 }
 
