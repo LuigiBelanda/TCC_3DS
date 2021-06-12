@@ -20,21 +20,17 @@
         rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reports.css">
 
     <!-- SITE ICON -->
     <link rel="sortcut icon" href="./img/MiniaturaSignalerPNG.png" type="image/x-icon" />
 </head>
 
 <body>
+    <main class="tudo">
     <!--IMAGEM CANTO-->
-    <img src="file:///C:/TCC%20-%203DS%20-%20Códigos/TCC_3DS/img/logo3.png" alt="imagemcanto" height="77" width="40,5"
-        class="imagemcanto">
-
+    
     <!--BARRA ROXA-->
-    <img src="file:///C:/TCC%20-%203DS%20-%20Códigos/TCC_3DS/img/barra_roxa.png" alt="barra roxa" class="barraroxa"><img
-        src="file:///C:/TCC%20-%203DS%20-%20Códigos/TCC_3DS/img/barra_roxa.png" alt="barra roxa" class="barraroxa"><img
-        src="file:///C:/TCC%20-%203DS%20-%20Códigos/TCC_3DS/img/barra_roxa2.png" alt="barra roxa" class="barraroxa">
 
     <!--MEUS REPORTES-->
     <h1 class="reportes_usuario">MEUS REPORTES</h1>
@@ -46,31 +42,35 @@
     <button class="botao_reporte">NOVO REPORTE</button>
 
     <!--MENSAGEM-->
-    <h1>mensagem de sucesso ou de erro no cadastro (aqui)</h1>
-
-    <!--PESQUISA CIDADE-->
-    <h1>PESQUISA CIDADE</h1>
+    <p class="mensagem">mensagem de sucesso ou de erro no cadastro (aqui)</p><br>
 
     <!--BUSCAR-->
-    <button>BUSCAR</button>
+    <button class="botao_buscar">BUSCAR</button><br>
 
+    <!--PESQUISA CIDADE-->
+    <h2 class="pesquisa_cidade">PESQUISA CIDADE</h2><br>
+
+   
     <!--FORMULARIOS-->
-    <form><br>
-        <label for="nome">NOME:</label><br>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="cidade">Cidade:</label><br>
-        <input type="text" id="cidade" name="cidade"><br>
-        <label for="problema">Problema:</label><br>
-        <input type="text" id="problema" name="probelma"><br>
-      </form><br>
-      <form><br>
-        <label for="nome">NOME:</label><br>
-        <input type="text" id="nome" name="nome"><br>
-        <label for="cidade">Cidade:</label><br>
-        <input type="text" id="cidade" name="cidade"><br>
-        <label for="problema">Problema:</label><br>
-        <input type="text" id="problema" name="probelma"><br>
-      </form><br>
+    <form class="formularios"><br>
+        <label for="nome" class=formularios>NOME:</label><br>
+        <input type="text" id="nome" name="nome" class=formularios><br>
+        <label for="cidade" class=formularios>Cidade:</label><br>
+        <input type="text" id="cidade" name="cidade" class=formularios><br>
+        <label for="problema" class=formularios>Problema:</label><br>
+        <input type="text" id="problema" name="probelma" class=formularios><br>
+        <button  class="botao_ver_mais" class=formularios>+ VER MAIS</button><br> 
+    </form><br>
+      <form class=formularios><br>
+        <label for="nome" class=formularios>NOME:</label><br>
+        <input type="text" id="nome" name="nome" class=formularios><br>
+        <label for="cidade" class=formularios>Cidade:</label><br>
+        <input type="text" id="cidade" name="cidade" class=formularios><br>
+        <label for="problema" class=formularios>Problema:</label><br>
+        <input type="text" id="problema" name="probelma" class=formularios><br>
+        <button class="botao_ver_mais" class=formularios>+ VER MAIS</button><br>    
+    </form>
+    </main>
 </body>
 
 </html>

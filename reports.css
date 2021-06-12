@@ -7,50 +7,57 @@
 
 /* =============== RESET ===============*/
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 /* =============== MAIN ===============*/
 
 body {
     font-family: 'Poppins', sans-serif;
-
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    overflow: hidden;
 }
+
+/* =============== MAIN TUDO ===============*/
 
 /* =============== IMAGEM CANTO ===============*/
 
-.imagemcanto{
-    margin-top: 15px;
-    margin-left: 20px;
-
-}
-
 /* =============== BARRA ROXA ===============*/
 
-.barraroxa{
-}
-
 /* =============== MEUS REPORTES ===============*/
-
 .reportes_usuario{
+    text-align: center;
 }
 
 /* =============== NOME USUARIO ===============*/
-
 .usuario{
+    text-align:center;
 }
 
 /* =============== NOVO REPORTE ===============*/
-
 .botao_reporte{
+    align-content:space-around;
+}
+
+/* =============== FORMULARIOS ===============*/
+.formularios{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+/* =============== BOTAO BUSCAR ===============*/
+
+.botao_buscar{
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+/* =============== BOTAO BUSCAR ===============*/
+
+.pesquisa_cidade{
+    text-align: center;
+}
+
+/* =============== MENSAGEM ===============*/
+
+.mensagem{
+    text-align: center;
 }
