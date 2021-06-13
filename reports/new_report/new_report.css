@@ -70,6 +70,14 @@ h2 {
     font-size: 22px;
 }
 
+h3 {
+    font-size: 12px;
+    font-weight: 300;
+    color: #c7c7c7;
+
+    margin-top: 2px;
+}
+
 hr {
     width: 80%;
 
@@ -114,8 +122,36 @@ input {
     width: 35%;
 }
 
+#btn-submit {
+    width: 215px;
+    height: 35px;
+
+    margin-left: 370px;
+
+    border-radius: 45px;
+    border: none;
+
+    background-color: rgb(7, 150, 55);
+
+    letter-spacing: 2.5px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color: var(--color-font);
+
+    cursor: pointer;
+}
+
+#btn-submit:hover {
+    border: 2px solid white;
+}
+
 #btn-voltar, button {
-    margin-top: 20px;
+    margin-top: -50px;
+    margin-left: -215px;
+
+    position: relative;
+    top: -15px;
 
     width: 150px;
     height: 35px;
@@ -123,14 +159,17 @@ input {
     border-radius: 45px;
     border: none;
 
+    background-color: rgb(223, 9, 9);
+
     letter-spacing: 2.5px;
     font-family: "poppins", sans-serif;
     text-align: center;
     font-weight: 700;
+    color: var(--color-font);
 
     cursor: pointer;
 }
 
-#btn-voltar:hover {
-    box-shadow: 0 0 5pt 0.5pt #000000;
+button:hover {
+    border: 2px solid white;
 }
