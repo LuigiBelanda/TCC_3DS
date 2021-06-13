@@ -1,0 +1,136 @@
+/* =============== GLOBAL ===============*/
+
+:root {
+    --color-font: #e5e5e5;
+    --color-elements: #5e17eb;
+}
+
+/* =============== RESET ===============*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============== MAIN ===============*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+    width: 100vw;
+    /* adicionando imagem de fundo */
+    background: url('./background new_reports.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+.container {
+    width: min(90vw, 900px);
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0.25%;
+    margin-bottom: auto;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#form_report {
+    width: 80%;
+    height: 500px;
+
+    background-color: var(--color-elements);
+
+    border-radius: 45px;
+
+    margin-top: 60px;
+}
+
+h1 {
+    color: var(--color-font);
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: var(--color-font);
+
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+hr {
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.grupo-form {
+    padding-left: 70px;
+    text-align: justify;
+
+    color: var(--color-font);
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+    border-radius: 50px;
+
+    padding-left: 10px;
+
+    width: 35%;
+}
+
+input {
+    padding-left: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 50px;
+    border: none;
+
+    height: 25px;
+
+    width: 35%;
+}
+
+#btn-voltar, button {
+    margin-top: 20px;
+
+    width: 150px;
+    height: 35px;
+
+    border-radius: 45px;
+    border: none;
+
+    letter-spacing: 2.5px;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+#btn-voltar:hover {
+    box-shadow: 0 0 5pt 0.5pt #000000;
+}

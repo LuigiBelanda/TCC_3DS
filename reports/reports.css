@@ -89,9 +89,14 @@ nav {
     margin-left: 10px;
     margin-right: 10px;
 
-    transition: 0.25s ease-in;
+    transition: 0.10s ease-in;
 
     cursor: pointer;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 #my_reports:hover {
@@ -106,9 +111,10 @@ nav {
     color: var(--color-font);
 
     margin-left: 10px;
-<<<<<<< HEAD
-=======
     margin-right: 10px;
+
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 #new_report {
@@ -118,9 +124,14 @@ nav {
     margin-left: 10px;
     margin-right: 10px;
 
-    transition: 0.25s ease-in;
+    transition: 0.10s ease-in;
 
     cursor: pointer;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 #new_report:hover {
@@ -128,7 +139,6 @@ nav {
     border-radius: 50px;
 
     border: 2px solid black;
->>>>>>> b8ce0ba76e530b207dbe350acc6b6e183f110dc9
 }
 
 
@@ -142,6 +152,8 @@ nav {
 }
 
 select, #city {
+    font-family: 'Poppins', sans-serif;
+
     width: 150px;
     height: 25px;
 
@@ -150,7 +162,7 @@ select, #city {
     transition: 0.25s ease-in;
 }
 
-input {
+#input_busca {
     font-family: 'Poppins', sans-serif;
 
     border-radius: 50px;
@@ -173,7 +185,7 @@ input {
     transition: 0.05s ease-in;
 }
 
-input:hover {
+#input_busca:hover {
     border: 2px #000000 solid;
 }
 
@@ -225,34 +237,10 @@ button {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
-#message{
-    text-align: center;
-    margin-top: 50px;
-}
-
-#button{
-    background-color: var(--color-elements);
-    border-radius: 50px;
-    color: var(--color-font);
-    font-weight: bolder;
-    height: 50px;
-    width: 150px;
-    margin-top: 67px;
-    margin-right: 8px;
-    margin-left: 825px;
-}
-
-.search{
-    margin-right: 0px;
-    margin-top: -35px;
-    margin-left: 400px;
-=======
 /* =============== PAGINAÇÃO ===============*/
 
 #pages {
     margin-top: 45px;
 
     color: var(--color-elements);
->>>>>>> b8ce0ba76e530b207dbe350acc6b6e183f110dc9
 }
