@@ -27,6 +27,31 @@ body {
     overflow: hidden;
 }
 
+.container {
+    width: min(90vw, 900px);
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0.25%;
+    margin-bottom: auto;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =============== MSG ===============*/
+
+#msg {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* =============== NAV ===============*/
+
 nav {
     width: 100%;
     height: 70px;
@@ -41,14 +66,20 @@ nav {
     margin-right: auto;
 }
 
-#logo {
+#logo1 {
     border: 5px solid white;
     border-radius: 50px;
 
     width: 50px;
     height: 50px;
+}
 
-    margin-left: 10px;
+#logo2 {
+    border: 5px solid white;
+    border-radius: 50px;
+
+    width: 50px;
+    height: 50px;
 }
 
 #my_reports {
@@ -56,6 +87,7 @@ nav {
     color: var(--color-font);
 
     margin-left: 10px;
+    margin-right: 10px;
 
     transition: 0.25s ease-in;
 
@@ -63,9 +95,9 @@ nav {
 }
 
 #my_reports:hover {
-    background-color: var(--color-font);
+    background-color: crimson;
     border-radius: 50px;
-    color: black;
+    color: rgb(255, 255, 255);
     border: 2px solid black;
 }
 
@@ -74,6 +106,9 @@ nav {
     color: var(--color-font);
 
     margin-left: 10px;
+<<<<<<< HEAD
+=======
+    margin-right: 10px;
 }
 
 #new_report {
@@ -81,6 +116,7 @@ nav {
     color: var(--color-font);
 
     margin-left: 10px;
+    margin-right: 10px;
 
     transition: 0.25s ease-in;
 
@@ -92,8 +128,104 @@ nav {
     border-radius: 50px;
 
     border: 2px solid black;
+>>>>>>> b8ce0ba76e530b207dbe350acc6b6e183f110dc9
 }
 
+
+/* =============== FORMS BUSCA ===============*/
+
+#forms_busca {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+select, #city {
+    width: 150px;
+    height: 25px;
+
+    border-radius: 50px;
+
+    transition: 0.25s ease-in;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 50px;
+    
+    width: 100px;
+    height: 25px;
+
+    border: none;
+
+    margin-top: 15px;
+    margin-left: 75px;
+
+    background-color: var(--color-elements);
+
+    color: var(--color-font);
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.05s ease-in;
+}
+
+input:hover {
+    border: 2px #000000 solid;
+}
+
+/* =============== REPORTS ===============*/
+
+.reports {
+    margin-top: 25px;
+
+    width: 650px;
+    height: auto;
+
+    border: 2.5px solid var(--color-elements);
+    border-radius: 25px;
+
+    text-align: justify;
+
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.reports, h3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+span {
+    color: #696565;
+}
+
+button {
+    font-family: "poppins", sans-serif;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 245px;
+    
+    width: 115px;
+    height: 25px;
+
+    background-color: #015d00;
+    background-image: linear-gradient(314deg, #033b02 0%, #09b406 74%);
+
+    border: none;
+    border-radius: 50px;
+
+    color: var(--color-font);
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+<<<<<<< HEAD
 #message{
     text-align: center;
     margin-top: 50px;
@@ -115,4 +247,12 @@ nav {
     margin-right: 0px;
     margin-top: -35px;
     margin-left: 400px;
+=======
+/* =============== PAGINAÇÃO ===============*/
+
+#pages {
+    margin-top: 45px;
+
+    color: var(--color-elements);
+>>>>>>> b8ce0ba76e530b207dbe350acc6b6e183f110dc9
 }
