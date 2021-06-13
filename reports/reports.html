@@ -39,6 +39,10 @@
 
     <main>
         <div class="container">
+
+            <!-- MSG SUCESS OR ERROR-->
+            <h2 id="msg">Mensagem de erro ou de sucesso aqui</h2>
+
             <!-- FORMS DE BUSCA -->
             <form action="" id="forms_busca">
                 <label for="city">Pesquisar uma cidade:</label>
@@ -48,9 +52,29 @@
                   <option value="fiat">Borborema</option>
                   <option value="audi">Novo Horizonte</option>
                 </select>
-                <br>
                 <input type="submit" value="PESQUISAR">
               </form>
+
+              <!-- REPORTS -->
+              <div class="reports">
+                <h3>Nome: <span>Luigi Belanda</span></h3>
+                <h3>Cidade: <span>Itápolis</span></h3>
+                <h3>Problema: <span>Muito sorvete na cidade</span></h3>
+
+                <button>+ Ver mais</button>
+              </div>
+
+              <div class="reports">
+                <h3>Nome: <span>Gustavo Borges</span></h3>
+                <h3>Cidade: <span>Ibitinga</span></h3>
+                <h3>Problema: <span>Falta de uma mão</span></h3>
+
+                <button>+ Ver mais</button>
+              </div>
+
+              <!-- PAGINAÇÃO -->
+              <h4 id="pages">1, 2, 3...</h4>
+
         </div>
     </main>
 </body>
