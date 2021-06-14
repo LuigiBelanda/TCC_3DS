@@ -85,7 +85,7 @@ nav {
 }
 
 #my_reports {
-    width: 225px;
+    width: 200px;
     color: var(--color-font);
 
     margin-left: 10px;
@@ -102,14 +102,14 @@ nav {
 }
 
 #my_reports:hover {
-    background-color: crimson;
+    background-color: rgb(223, 9, 9);
     border-radius: 50px;
     color: rgb(255, 255, 255);
     border: 2px solid black;
 }
 
 #user {
-    width: 225px;
+    width: 200px;
     color: var(--color-font);
 
     margin-left: 10px;
@@ -120,7 +120,7 @@ nav {
 }
 
 #new_report {
-    width: 225px;
+    width: 200px;
     color: var(--color-font);
 
     margin-left: 10px;
@@ -137,7 +137,7 @@ nav {
 }
 
 #new_report:hover {
-    background-color: rgb(6, 180, 6);
+    background-color: rgb(7, 150, 55);
     border-radius: 50px;
 
     border: 2px solid black;
@@ -197,7 +197,7 @@ select, #city {
 /* =============== REPORTS ===============*/
 
 .reports {
-    margin-top: 25px;
+    margin-top: 15px;
 
     width: 650px;
     height: auto;
@@ -232,8 +232,7 @@ button {
     width: 115px;
     height: 25px;
 
-    background-color: #015d00;
-    background-image: linear-gradient(314deg, #033b02 0%, #09b406 74%);
+    background-color: rgb(7, 150, 55);
 
     border: none;
     border-radius: 50px;
@@ -247,7 +246,7 @@ button {
 /* =============== PAGINAÇÃO ===============*/
 
 #pages {
-    margin-top: 45px;
+    margin-top: 25px;
 
     color: var(--color-elements);
 }
