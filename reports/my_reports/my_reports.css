@@ -22,7 +22,7 @@ body {
     height: 100vh;
     width: 100vw;
     /* adicionando imagem de fundo */
-    background: url('../img/reports img/background reports.png');
+    background: url('../../img/reports img/background my_reports.png');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -42,13 +42,6 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-/* =============== MSG ===============*/
-
-#msg {
-    margin-top: 30px;
-    margin-bottom: 15px;
 }
 
 
@@ -84,30 +77,6 @@ nav {
     height: 50px;
 }
 
-#my_reports {
-    width: 200px;
-    color: var(--color-font);
-
-    margin-left: 10px;
-    margin-right: 10px;
-
-    transition: 0.10s ease-in;
-
-    cursor: pointer;
-
-    text-decoration: none;
-
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-#my_reports:hover {
-    background-color: rgb(223, 9, 9);
-    border-radius: 50px;
-    color: rgb(255, 255, 255);
-    border: 2px solid black;
-}
-
 #user {
     width: 200px;
     color: var(--color-font);
@@ -119,80 +88,26 @@ nav {
     font-size: 20px;
 }
 
-#new_report {
-    width: 200px;
-    color: var(--color-font);
+/* =============== NUM_REPORTS ===============*/
 
-    margin-left: 10px;
-    margin-right: 10px;
-
-    transition: 0.10s ease-in;
-
-    cursor: pointer;
-
-    text-decoration: none;
-
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-#new_report:hover {
-    background-color: rgb(7, 150, 55);
-    border-radius: 50px;
-
-    border: 2px solid black;
-}
-
-
-/* =============== FORMS BUSCA ===============*/
-
-#forms_busca {
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-
-    margin-bottom: 25px;
-}
-
-select, #city {
-    font-family: 'Poppins', sans-serif;
-
-    width: 150px;
-    height: 25px;
-
-    padding-left: 5px;
-
-    border-radius: 50px;
-
-    transition: 0.25s ease-in;
-}
-
-#input_busca {
-    font-family: 'Poppins', sans-serif;
-
-    border-radius: 50px;
-    
-    width: 115px;
-    height: 25px;
-
-    border: none;
-
-    margin-top: 15px;
-    margin-left: 75px;
+#num_reports {
+    margin-top: 30px;
+    margin-bottom: 15px;
 
     background-color: var(--color-elements);
 
+    width: 450px;
+    height: auto;
+
     color: var(--color-font);
-    font-weight: 800;
-    letter-spacing: 2px;
 
-    cursor: pointer;
-
-    transition: 0.05s ease-in;
+    border-radius: 50px;
 }
 
-#input_busca:hover {
-    border: 2px #000000 solid;
+#span_num_reports {
+    color: rgb(148, 3, 3);
 }
+
 
 /* =============== REPORTS ===============*/
 
@@ -243,10 +158,28 @@ button {
     cursor: pointer;
 }
 
+#btn-voltar {
+    background-color: #5e17eb;
+
+    height: 30px;
+
+    margin-left: 0px;
+    margin-top: 30px;
+
+    color: var(--color-font);
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+#btn-voltar:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
 /* =============== PAGINAÇÃO ===============*/
 
 #pages {
-    margin-top: 25px;
+    margin-top: 20px;
 
     color: var(--color-elements);
 }
