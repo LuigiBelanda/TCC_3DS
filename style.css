@@ -140,14 +140,16 @@ input {
 
     padding-left: 10px;
 
-    transition: width 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 
 }
 
+/* Add uma sombra ao input */
 input:hover{
     box-shadow: 0 0 5pt 0.5pt #000000;
 }
 
+/* Efeito que aumento o tamanho do input quando o user seleciona ele */
 input:focus {
     box-shadow: 0 0 5pt 2pt #000000;
     outline-width: 0px;
@@ -185,6 +187,7 @@ input:focus {
     transition: 0.09s;
 }
 
+/* Add um contorno aos botões do forms */
 .forms_button:hover {
     border: 3px #e5e5e5 solid;
 }
@@ -259,18 +262,7 @@ input:focus {
 
 
 /*================= MEDIA =================*/
-@media (max-width: 640px) {
-    body {
-        font-family: 'Poppins', sans-serif;
-    
-        height: 100vh;
-        width: 100vw;
-        /* adicionando imagem de fundo */
-        background: url('./img/cidade.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
+@media (max-width: 360px) {
     .container {
         width: min(80vw);
         height: 100vh;
@@ -287,7 +279,7 @@ input:focus {
         width: 50px;
         height: 50px;
 
-        margin-top: -10px;
+        margin-top: 5px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -296,11 +288,11 @@ input:focus {
         display: none;
     }
     
-    .title {
-        font-size: 1.25rem;
-    
-        margin-top: -10px;
-        margin-left: 10px;
+    #title_logo {
+        margin-top: -50px;
+        margin-bottom: -25px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #linha_titles {
@@ -315,6 +307,9 @@ input:focus {
         font-size: 0.60rem;
     
         width: 265px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     
     h2 {
@@ -353,7 +348,13 @@ input:focus {
         height: 30px;
     
         padding-left: 10px;
-    
+    }
+
+    /* Efeito que aumento o tamanho do input quando o user seleciona ele */
+    input:focus {
+        box-shadow: 0 0 5pt 2pt #000000;
+        outline-width: 0px;
+        width: 95%;
     }
     
     .forms_button {
@@ -362,8 +363,6 @@ input:focus {
     
         margin-top: -0.25rem;
         margin-bottom: 15px;
-        margin-right: auto;
-        margin-left: auto;
     
         display: flex;
         justify-content: center;
@@ -373,9 +372,6 @@ input:focus {
     }
     
     #linha_forms {
-        margin-left: auto;
-        margin-right: auto;
-    
         margin-top: 25px;
         margin-bottom: 5px;
     
@@ -385,19 +381,17 @@ input:focus {
     
     /* =============== BUTTON CREATORS ===============*/
     #creators {
-        width: 150px;
-        height: 45px;
+        width: 140px;
+        height: 40px;
     
-        margin-top: 1rem;
-
-        transition: 0.09s;
+        margin-top: 0.5rem;
     }
 }
     
 
 
 /* =============== MEDIA IPHONE 5/SE ===============*/
-@media (max-width: 640px), (max-height: 568px) {
+@media (max-width: 320px), (max-height: 568px) {
     #logo {
         width: 40px;
         height: 40px;
@@ -411,11 +405,10 @@ input:focus {
         display: none;
     }
     
-    .title {
-        font-size: 1rem;
-    
-        margin-top: -10px;
-        margin-left: 10px;
+    #title_logo {
+        margin-top: -50px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #linha_titles {
@@ -430,6 +423,9 @@ input:focus {
         font-size: 0.55rem;
     
         width: 285px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
     
     h2 {
@@ -498,8 +494,8 @@ input:focus {
     
     /* =============== BUTTON CREATORS ===============*/
     #creators {
-        width: 150px;
-        height: 45px;
+        width: 135px;
+        height: 30px;
     
         margin-top: 0.5rem;
     

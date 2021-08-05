@@ -21,10 +21,8 @@ body {
 
     height: 100vh;
     width: 100vw;
-    /* adicionando imagem de fundo */
-    background: url('../img/reports img/background reports.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    background-color: white;
 
     overflow: hidden;
 }
@@ -43,14 +41,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* =============== MSG ===============*/
-
-#msg {
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
 
 /* =============== NAV ===============*/
 
@@ -150,7 +140,7 @@ nav {
     font-family: 'Poppins', sans-serif;
     width: 100%;
 
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 select, #city {
@@ -166,12 +156,17 @@ select, #city {
     transition: 0.25s ease-in;
 }
 
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px var(--color-elements);
+}
+
 #input_busca {
     font-family: 'Poppins', sans-serif;
 
     border-radius: 50px;
     
-    width: 115px;
+    width: 125px;
     height: 25px;
 
     border: none;
@@ -183,7 +178,8 @@ select, #city {
 
     color: var(--color-font);
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 16px;
 
     cursor: pointer;
 
@@ -194,53 +190,59 @@ select, #city {
     border: 2px #000000 solid;
 }
 
-/* =============== REPORTS ===============*/
+#span_num_reports {
+    font-weight: 800;
+    color: var(--color-font);
+}
 
-.reports {
-    margin-top: 15px;
+/* =============== DADOS ===============*/
 
-    width: 650px;
+.dados {
+    width: calc(55% + 10px);
     height: auto;
 
-    border: 2.5px solid var(--color-elements);
-    border-radius: 25px;
+    background: var(--color-elements);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to 90deg, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2f0c74,#5e17eb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    background-color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
 
-    text-align: justify;
-
-    padding-left: 15px;
-    padding-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
 }
 
-.reports, h3 {
-    font-size: 15px;
-    font-weight: 500;
+h4 {
+    color: var(--color-font);
 }
 
-span {
-    color: #696565;
-}
-
-button {
-    font-family: "poppins", sans-serif;
-
-    margin-bottom: 10px;
+#ver_reportes {
+    margin-bottom: 15px;
     margin-top: 10px;
-    margin-left: 250px;
-    
-    width: 115px;
-    height: 25px;
-
-    background-color: rgb(7, 150, 55);
 
     border: none;
-    border-radius: 50px;
+    background-color: var(--color-elements);
+    text-decoration: none;
 
+    font-family: 'Poppins', sans-serif;
     color: var(--color-font);
-    font-weight: 500;
+
+    border-radius: 50px;
+    
+    width: 260px;
+    height: 25px;
 
     cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 16px;
+
+    transition: 0.05s ease-in;
+}
+
+#ver_reportes:hover {
+    border: 2px #000000 solid;
 }
 
 /* =============== PAGINAÇÃO ===============*/
@@ -249,4 +251,196 @@ button {
     margin-top: 25px;
 
     color: var(--color-elements);
+}
+
+#msg {
+    background-color: red;
+    border-radius: 50px;
+    color: var(--color-font);
+
+    width: 350px;
+}
+
+
+/* =============== MEDIA GALAXY S5 and MOTO G4 ===============*/
+@media (max-width: 360px), (max-height: 640px) {
+    
+    body {
+        overflow: auto;
+    }
+
+    #logo1 {
+        display: none;
+    }
+    
+    #logo2 {
+        display: none;
+    }
+
+    #input_busca {
+        margin-top: 15px;
+        margin-left: 15px;
+
+        font-size: 14px;
+        width: 100px;
+    }
+   
+    #my_reports {
+        width: 200px;
+        color: var(--color-font);
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        transition: 0.10s ease-in;
+
+        cursor: pointer;
+
+        text-decoration: none;
+
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+
+    #user {
+        width: 200px;
+        color: var(--color-font);
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    #new_report {
+        width: 200px;
+        color: var(--color-font);
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        transition: 0.10s ease-in;
+
+        cursor: pointer;
+
+        text-decoration: none;
+
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    #msg {
+        margin-top: 15px;
+        font-size: 14px;
+    
+        width: 250px;
+    }
+
+    .dados {
+        width: calc(90% + 20px);
+        font-size: 14px;
+    }
+    
+    h4 {
+        color: var(--color-font);
+        font-size: 14px;
+    }
+    
+    #ver_reportes {
+        font-size: 14px;
+    }
+
+}
+
+/* =============== MEDIA IPHONE 5/SE ===============*/
+@media (max-width: 320px), (max-height: 568px) {
+
+    body {
+        overflow: auto;
+    }
+
+    #logo1 {
+        display: none;
+    }
+    
+    #logo2 {
+        display: none;
+    }
+
+    #input_busca {
+        margin-top: 15px;
+        margin-left: 15px;
+
+        font-size: 14px;
+    }
+   
+    #my_reports {
+        width: 200px;
+        color: var(--color-font);
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        transition: 0.10s ease-in;
+
+        cursor: pointer;
+
+        text-decoration: none;
+
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+
+    #user {
+        width: 200px;
+        color: var(--color-font);
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    #new_report {
+        width: 200px;
+        color: var(--color-font);
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        transition: 0.10s ease-in;
+
+        cursor: pointer;
+
+        text-decoration: none;
+
+        font-weight: bolder;
+        font-size: 14px;
+    }
+
+    #msg {
+        margin-top: 15px;
+        font-size: 14px;
+    
+        width: 250px;
+    }
+
+    .dados {
+        width: calc(90% + 10px);
+        font-size: 14px;
+    }
+    
+    h4 {
+        color: var(--color-font);
+        font-size: 14px;
+    }
+    
+    #ver_reportes {
+        font-size: 14px;
+    }
+
 }

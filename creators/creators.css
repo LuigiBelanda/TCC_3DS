@@ -191,6 +191,8 @@ button:hover {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
+
+        opacity: 1;
     }
 
     #fellipe {
@@ -201,6 +203,8 @@ button:hover {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
+
+        opacity: 1;
     }
 
     #giovana {
@@ -216,11 +220,9 @@ button:hover {
         background: -webkit-linear-gradient(180deg, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(180deg, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-        opacity: 0.8;
-    
-        transition: 0.25s;
-    
         font-size: 15px;
+
+        opacity: 1;
     }
 
     #patrick {
@@ -231,6 +233,8 @@ button:hover {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
+
+        opacity: 1;
     }
 
     #gustavo {
@@ -241,6 +245,8 @@ button:hover {
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
+
+        opacity: 1;
     }
 
     .fotos {
@@ -254,7 +260,7 @@ button:hover {
     }
 
     button {
-        margin-top: 1vh;
+        margin-top: -1vh;
     
         width: 120px;
         height: 25px;

@@ -32,7 +32,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    margin-top: 0.10%;
+    margin-top: 0.25%;
     margin-bottom: auto;
 
     display: flex;
@@ -40,6 +40,13 @@ body {
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+/* =============== MSG ===============*/
+
+#msg {
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 
@@ -75,6 +82,30 @@ nav {
     height: 50px;
 }
 
+#my_reports {
+    width: 200px;
+    color: var(--color-font);
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: 0.10s ease-in;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#my_reports:hover {
+    background-color: rgb(223, 9, 9);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
 #user {
     width: 200px;
     color: var(--color-font);
@@ -86,32 +117,34 @@ nav {
     font-size: 20px;
 }
 
-/* =============== NUM_REPORTS ===============*/
-
-#num_reports {
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    background-color: var(--color-elements);
-
-    width: 450px;
-    height: auto;
-
+#new_report {
+    width: 200px;
     color: var(--color-font);
 
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: 0.10s ease-in;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#new_report:hover {
+    background-color: rgb(7, 150, 55);
     border-radius: 50px;
-}
 
-#span_num_reports {
-    font-size: 22px;
-    color: #ddec04;
+    border: 2px solid black;
 }
-
 
 /* =============== REPORTS ===============*/
 
 .reports {
-    margin-top: 10px;
+    margin-top: 15px;
 
     width: 650px;
     height: auto;
@@ -134,16 +167,39 @@ nav {
 }
 
 span {
+    font-weight: 800;
     font-size: 14px;
     color: #ff0000;
-    font-weight: 800;
+}
+
+/* =============== DADOS ===============*/
+
+.dados {
+    width: calc(50% + 10px);
+    height: auto;
+
+    background-color: var(--color-elements);
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+h4 {
+    color: var(--color-font);
+}
+
+#ver_reportes {
+    margin-bottom: 5px;
 }
 
 /* =============== PAGINAÇÃO ===============*/
 
 #pages {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 
     color: var(--color-elements);
     display: flex;

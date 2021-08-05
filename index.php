@@ -1,9 +1,17 @@
+<?php
+
+// Iniciando a sessão e incluindo o arquivo com infos do BD 
+session_start();
+include_once("./php/connect.php")
+
+?>
 
 <!DOCTYPE html>
 
 <html lang="pt-br">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +29,7 @@
     <link rel="stylesheet" href="./style.css">
 
     <!-- SITE ICON -->
-    <link rel="shortcut icon" href="./img/logos site/logo miniatura signaler.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./img/logos site/logo miniatura signaler.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -35,36 +43,40 @@
 
             <!-- logo 2-->
             <img src="./img/logos site/logo miniatura signaler.png" alt="logo" id="logo2">
-    
+
             <!-- element - linha -->
-            <hr id="linha_titles"></hr>
-    
+            <hr id="linha_titles">
+            </hr>
+
             <!-- subtitle -->
             <div class="subtitle">
                 <h2>Aplicação com foco na eficiência e rapidez de reportes de problemas urbanos</h2>
             </div>
         </section>
 
-        
+
         <!-- forms -->
         <div id="forms_cad_log">
-            <form method="POST" action="">
+            <form method="POST" action="./php/login.php">
                 <h3 class="title_forms"> ENTRAR </h3>
-                <input type="text" name="nome" placeholder="digite o nome de seu usuário">
+                <input type="text" name="login" id="login" placeholder="digite o nome de seu usuário">
                 <br>
-                <input type="password" name="password" placeholder="digite a sua senha">
+                <input type="password" name="senha" id="senha" placeholder="digite a sua senha">
                 <br>
                 <br>
-                <button type="submit" class="forms_button"> LOGIN </button>
-                <hr id="linha_forms"></hr>
+                <button type="submit" value="entrar" id="entrar" name="entrar" class="forms_button"> LOGIN </button>
+                <hr id="linha_forms">
+                </hr>
+            </form>
 
+            <form method="POST" action="./php/cadastro.php">
                 <h3 class="title_forms"> CADASTRAR </h3>
-                <input type="text" name="nome" placeholder="digite o nome de seu usuário">
+                <input type="text" name="login" id="login" placeholder="digite o nome de seu usuário">
                 <br>
-                <input type="password" name="password" placeholder="digite a sua senha">
+                <input type="password" name="senha" id="senha" placeholder="digite a sua senha">
                 <br>
                 <br>
-                <button type="submit" class="forms_button" > CADASTRAR </button>
+                <button type="submit" value="cadastrar" id="cadastrar" name="cadastrar" class="forms_button"> CADASTRAR </button>
             </form>
         </div>
 

@@ -26,7 +26,7 @@
 
     <div class="container">
         <div id="form_report">
-            <form action="" id="forms_busca">
+            <form action="../../php/novoReporte.php" method="POST" id="forms_busca">
     
                 <h1>NOVO REPORTE</h1>
 
@@ -35,6 +35,7 @@
                 <div class="grupo-form">
                     <label for="city">Escolha a cidade:</label>
                     <select id="city" name="city">
+                        <option value=""></option>
                         <option value="Itápolis">Itápolis</option>
                         <option value="Ibitinga">Ibitinga</option>
                         <option value="Borborema">Borborema</option>
@@ -45,16 +46,18 @@
                 <div class="grupo-form">
                     <label for="problems">Escolha o problema:</label>
                     <select id="problems" name="problems">
-                        <option value="Buraco">Buraco na rua</option>
-                        <option value="Vazamento">Vazamento de água</option>
-                        <option value="arvore">Árvore caida</option>
-                        <option value="fio">Fio de energia estourado</option>
+                        <option value=""></option>
+                        <option value="Buraco na rua">Buraco na rua</option>
+                        <option value="Vazamento de água">Vazamento de água</option>
+                        <option value="Árvore caída">Árvore caída</option>
+                        <option value="Fio de energia estourado">Fio de energia estourado</option>
                     </select>
                 </div>
 
                 <div class="grupo-form">
                     <label for="grau">Grau do problema:</label>
                     <select id="grau" name="grau">
+                        <option value=""></option>
                         <option value="Leve">Leve </option>
                         <option value="Médio">Médio</option>
                         <option value="Grave">Grave</option>
@@ -66,7 +69,7 @@
                 <h2>Endereço</h2>
 
                 <div class="grupo-form">
-                    <label for="rua">Rua:</label>
+                    <label for="Rua">Rua:</label>
                     <input type="text" name="rua" id="rua" placeholder="Coloque a rua do problema">
                 </div>
 
@@ -77,7 +80,7 @@
 
                 <div class="grupo-form">
                     <label for="Descrição">Descrição:</label>
-                    <input type="text" name="descrição" id="descrição" placeholder="Coloque uma breve descrição" maxlength="150">
+                    <input type="text" name="descri" id="descri" placeholder="Coloque uma breve descrição" maxlength="150">
                     <h3>* Descrição de no máximo 150 caracteres</h3>
                 </div>
 
@@ -85,7 +88,7 @@
 
             </form>
     
-            <a href="../reports.html" id="btn-voltar">
+            <a href="../reports.php" id="btn-voltar">
                 <button>VOLTAR</button>
             </a>
         </div>
