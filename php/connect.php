@@ -2,7 +2,7 @@
 
     $servidor = "localhost";
     $usuario = "root";
-    $senha = "root";
+    $senha = "";
     $dbname = "testetcc";
 
     //cria a conexão

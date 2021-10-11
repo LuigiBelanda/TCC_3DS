@@ -1,7 +1,7 @@
 /* =============== GLOBAL ===============*/
 
 :root {
-    --color-font: #e5e5e5;
+    --color-font: #fff;
     --color-elements: #5e17eb;
 }
 
@@ -11,24 +11,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 
 /* =============== MAIN ===============*/
 
 body {
-    font-family: 'Poppins', sans-serif;
-
     height: 100vh;
     width: 100vw;
 
     background-color: white;
 
-    overflow: hidden;
+    overflow: auto;
 }
 
 .container {
-    width: min(90vw, 900px);
+    width: min(80vw, 800px);
     margin-left: auto;
     margin-right: auto;
 
@@ -158,7 +158,7 @@ select, #city {
 
 select:focus {
     outline: none;
-    box-shadow: 0 0 0 1px var(--color-elements);
+    box-shadow: 0 0 0 1.5px var(--color-elements);
 }
 
 #input_busca {
@@ -166,8 +166,8 @@ select:focus {
 
     border-radius: 50px;
     
-    width: 125px;
-    height: 25px;
+    width: 130px;
+    height: 30px;
 
     border: none;
 
@@ -198,7 +198,7 @@ select:focus {
 /* =============== DADOS ===============*/
 
 .dados {
-    width: calc(55% + 10px);
+    width: calc(60% + 10px);
     height: auto;
 
     background: var(--color-elements);  /* fallback for old browsers */
@@ -211,10 +211,20 @@ select:focus {
     border-radius: 10px;
     text-align: center;
     justify-content: center;
+
+    transition: 0.15s ease-in;
+
+    opacity: 70%;
+}
+
+.dados:hover {
+    opacity: 100%;
 }
 
 h4 {
     color: var(--color-font);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #ver_reportes {
@@ -228,10 +238,10 @@ h4 {
     font-family: 'Poppins', sans-serif;
     color: var(--color-font);
 
-    border-radius: 50px;
+    border-radius: 15px;
     
-    width: 260px;
-    height: 25px;
+    width: 265px;
+    height: 30px;
 
     cursor: pointer;
     font-weight: 800;
@@ -261,9 +271,8 @@ h4 {
     width: 350px;
 }
 
-
 /* =============== MEDIA GALAXY S5 and MOTO G4 ===============*/
-@media (max-width: 360px), (max-height: 640px) {
+@media (max-width: 360px) and (max-height: 640px){
     
     body {
         overflow: auto;
@@ -277,8 +286,12 @@ h4 {
         display: none;
     }
 
+    nav {
+        margin-bottom: 15px;
+    }
+
     #input_busca {
-        margin-top: 15px;
+        margin-top: 5px;
         margin-left: 15px;
 
         font-size: 14px;
@@ -302,6 +315,9 @@ h4 {
         font-size: 14px;
     }
 
+    .dados {
+        opacity: 100%;
+    }
 
     #user {
         width: 200px;
@@ -355,7 +371,7 @@ h4 {
 }
 
 /* =============== MEDIA IPHONE 5/SE ===============*/
-@media (max-width: 320px), (max-height: 568px) {
+@media (max-width: 320px) and (max-height: 568px) {
 
     body {
         overflow: auto;
@@ -369,9 +385,13 @@ h4 {
         display: none;
     }
 
+    nav {
+        margin-bottom: 10px;
+    }
+
     #input_busca {
-        margin-top: 15px;
-        margin-left: 15px;
+        margin-top: 10px;
+        margin-left: 2.5px;
 
         font-size: 14px;
     }
@@ -393,6 +413,9 @@ h4 {
         font-size: 14px;
     }
 
+    .dados {
+        opacity: 100%;
+    }
 
     #user {
         width: 200px;
@@ -430,7 +453,7 @@ h4 {
     }
 
     .dados {
-        width: calc(90% + 10px);
+        width: calc(90% + 20px);
         font-size: 14px;
     }
     
@@ -441,6 +464,8 @@ h4 {
     
     #ver_reportes {
         font-size: 14px;
+        width: 245px;
+        height: 30px;
     }
 
 }

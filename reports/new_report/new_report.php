@@ -20,6 +20,12 @@
 
     <!-- SITE ICON -->
     <link rel="shortcut icon" href="../../img/logos site/logo miniatura signaler.png" type="image/x-icon" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.0/hint.min.css">
+
+
+
 </head>
 
 <body>
@@ -62,6 +68,12 @@
                         <option value="Médio">Médio</option>
                         <option value="Grave">Grave</option>
                     </select>
+                </div>
+
+                <div id="hint">
+                    <a class="button hint--bottom-right hint--bounce hint--rounded hint--warning hint--small" aria-label="Um problema que não oferece risco a ninguém e que pode ser resolvido rapidamente">Grau leve</a>
+                    <a class="button hint--bottom hint--bounce hint--rounded hint--warning hint--small" aria-label="Um problema que pode ocasionar mais problemas no futuro e que deve ser resolvido com uma certa prioridade">Grau médio</a>
+                    <a class="button hint--bottom-left hint--bounce hint--rounded hint--warning hint--small" aria-label="Um problema que oferece risco à alguém e que deve ser resolvido com urgência">Grau grave</a>
                 </div>
 
                 <hr></hr>
