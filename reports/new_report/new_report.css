@@ -126,6 +126,8 @@ input {
     width: 35%;
 
     transition: 0.25s ease-in;
+
+    caret-color: var(--color-elements); 
 }
 
 input:focus {
